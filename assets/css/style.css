@@ -44,6 +44,22 @@ h1 {
     color: #252525;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+/* links in the menu a visual cue when a user
+is on that particular page. */
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /* Main content */
 main{
     background-color: lightblue;
