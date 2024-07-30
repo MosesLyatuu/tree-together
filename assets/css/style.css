@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: whitesmoke;
+    color: rgba(9, 0, 77, 0.65) rgba(9, 0, 77, 0.65);
     font-family: 'Open Sans', sans-serif;
     background-image: url();
 }
@@ -90,9 +90,10 @@ nav {
 
 /* Main content */
 main{
-    background-color: lightblue;
+    background-color: rgba(125, 111, 232, 0.65);
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
