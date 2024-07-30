@@ -24,6 +24,10 @@ header{
     background-color: darkcyan;
 }
 
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Main content */
 main{
     background-color: lightblue;
