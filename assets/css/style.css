@@ -16,12 +16,12 @@ body{
     /* Generic project styles */
     color: rgba(9, 0, 77, 0.65) rgba(9, 0, 77, 0.65);
     font-family: 'Open Sans', sans-serif;
-    background-image: url();
+    background-color: rgb(141, 200, 220);
 }
 
 /* Header */
 header{
-    background-color: #ffffff;
+    background-color: rgb(141, 200, 220);
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -66,7 +66,7 @@ is on that particular page. */
 /* Navbar style with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #ffffff;
+    background-color: rgb(141, 200, 220);
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -90,10 +90,16 @@ nav {
 
 /* Main content */
 main{
-    background-color: rgba(125, 111, 232, 0.65);
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Hero image */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/photos/home-image.webp") no-repeat center center/cover;
 }
 
 /* Footer */
