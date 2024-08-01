@@ -14,9 +14,65 @@ body{
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: rgba(9, 0, 77, 0.65) rgba(9, 0, 77, 0.65);
+    color: rgba(9, 0, 77, 0.65);
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(141, 200, 220);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: uppercase;
+    letter-spacing: 2px;
+    /* Change color later */
+    color: #252525;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #3a3a3a;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
 }
 
 /* Header */
@@ -36,14 +92,6 @@ header{
 header a {
     text-decoration: none;
     /* Change color later*/
-    color: #252525;
-}
-
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: uppercase;
-    letter-spacing: 2px;
-    /* Change color later */
     color: #252525;
 }
 
@@ -100,6 +148,39 @@ main{
     height: 600px;
     width: 100%;
     background: url("../images/photos/home-image.webp") no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #f1f1f1;
+    padding: 20px;
+    transition: transform 0.5s ease;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25%;
+}
+
+#hero:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h2,
+.overlay h3,
+.overlay p,
+.overlay ul,
+.overlay a {
+    border-radius: 20%;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Semi-transparent background for visibility */
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 /* Footer */
