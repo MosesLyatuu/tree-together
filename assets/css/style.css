@@ -8,27 +8,26 @@
     box-sizing: border-box;
 }
 
-/* General atyles */
-body{
+/* General styles */
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     /* Generic project styles */
     color: rgba(9, 0, 77, 0.65);
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(141, 200, 220);
+    margin: 0;
+    padding-bottom: 80px;
 }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    text-decoration: uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
     /* Change color later */
     color: #252525;
-}
-
-
-h1 {
     font-size: 2.5rem;
 }
 
@@ -82,11 +81,11 @@ header{
     position: fixed;
     z-index: 99;
     width: 100%;
-    /* Remove this */
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    top: 0;
 }
 
 header a {
@@ -99,6 +98,7 @@ header a {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    display: flex;
 }
 
 #menu > li {
@@ -113,14 +113,14 @@ is on that particular page. */
 
 /* Navbar style with dropdown toggle */
 nav {
+    display: none;
     position: absolute;
     background-color: rgb(141, 200, 220);
     width: 100%;
     left: 0;
+    top: 100%;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
 }
 
 /* Nav toggle */
@@ -134,13 +134,15 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+    display: none;
 }
 
 /* Main content */
 main{
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 80px;
+    padding: 1rem;
 }
 
 /* Hero image */
@@ -149,6 +151,7 @@ main{
     width: 100%;
     background: url("../images/photos/home-image.webp") no-repeat center center/cover;
     position: relative;
+    /* Check this */
     overflow: hidden;
 }
 
@@ -164,7 +167,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 25%;
+    border-radius: 20%;
+    box-sizing: border-box;
 }
 
 #hero:hover .overlay {
@@ -184,19 +188,28 @@ main{
 }
 
 /* Footer */
-#social-networks {
+footer {
+    background-color: rgb(141, 200, 220);
     text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
 }
 
 #social-networks li {
     font-size: 160%;
     padding: 0.5%;
     color: #3a3a3a;
+    list-style-type: none;
+    display: inline-block;
 }
+/*Check this */
+#social-networks a:hover{
+    color: rgb(195, 0, 255);
+}
+
 
 /* Media query: tablets and larger (768 and up) */
 @media screen and (min-width: 768px) {
@@ -230,7 +243,7 @@ main{
     /* Main content */
     main {
         /* Push main content down to accomodate larger header */
-        margin-top: 79px;
+        margin-top: 80px;
     }
 }
 
@@ -238,5 +251,44 @@ main{
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+/* Media query: small devices (mobile phones, up to 767px) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu > li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    #hero {
+        height: 400px;
+    }
+
+    .overlay {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .overlay h2, .overlay h3, .overlay p, .overlay ul, .overlay a {
+        padding: 2px;
     }
 }
