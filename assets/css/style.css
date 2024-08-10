@@ -189,7 +189,9 @@ main{
     overflow: hidden;
 }
 
-.overlay {
+/* Overlay effect removed due to user feedback * /
+/* 
+ .overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -217,9 +219,10 @@ main{
     border-radius: 20%;
     margin-bottom: 10px;
     padding: 10px;
-    /* Semi-transparent background for visibility */
     background-color: rgba(255, 255, 255, 0.2); 
-}
+}  */
+
+
 
 /* Footer */
 footer {
@@ -232,6 +235,7 @@ footer {
     margin-top: auto;
 }
 
+/* Remove li */
 #social-networks li {
     font-size: 160%;
     padding: 0.5%;
