@@ -33,19 +33,25 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    /* Added shadow*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 h3 {
     font-size: 1.5rem;
+    /* Added shadow*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
     line-height: 1.6;
     margin-bottom: 1rem;
+    /* Added shadow*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
     margin-bottom: 1rem;
 }
@@ -57,7 +63,7 @@ ul li {
 }
 
 ul li:before {
-    content: "•";
+    content: "";
     color: #3a3a3a;
     position: absolute;
     left: 0;
@@ -91,7 +97,7 @@ header{
 header a {
     text-decoration: none;
     /* Change color later*/
-    color: #252525;
+    color: inherit;
 }
 
 #menu {
@@ -99,6 +105,8 @@ header a {
     letter-spacing: 4px;
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 #menu > li {
@@ -113,14 +121,14 @@ is on that particular page. */
 
 /* Navbar style with dropdown toggle */
 nav {
-    display: none;
     position: absolute;
     background-color: rgb(141, 200, 220);
     width: 100%;
     left: 0;
-    top: 100%;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a3a;
+    display: none;
+    top: 100%;
 }
 
 /* Nav toggle */
@@ -134,7 +142,7 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
-    display: none;
+    /* display: none; */
 }
 
 /* Main content */
@@ -176,11 +184,21 @@ main{
     margin: 0 auto;
 }
 
+.hero-section .about-page {
+    display: block;
+    margin: 2rem auto 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /* Content section styling */
 .content-section {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh;  */
 }
 
 .text-image-row,
@@ -191,6 +209,32 @@ main{
     margin-bottom: 2rem;
 }
 
+  
+.text-image-row, .image-text-row {
+    display: flex;
+    flex: 1; 
+}
+  
+.text-image-row .text,
+.image-text-row .text {
+    flex: 1;
+    padding: 20px; 
+}
+  
+.text-image-row .image,
+.image-text-row .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.text-image-row .image img,
+.image-text-row .image img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Image to cover the container */
 img {
     object-fit: cover; 
@@ -198,11 +242,24 @@ img {
     height: 100%;
 }
 
+/* Join us section */
+.image-text-row .text h3 {
+    /* Centered title */
+    text-align: center; 
+}
+
+.image-text-row .text ul {
+    padding-left: 0; /* Removed padding from list */
+    list-style: none; /* Removed bullets */
+    text-align: center; /* Centered content */
+}
+
 .text,
 .image {
     flex: 1;
     padding: 1rem;
 }
+
 
 
 /* Overlay effect removed due to user feedback * /
@@ -382,10 +439,12 @@ footer {
 
     #menu {
         display: flex;
+        padding-left: 0;
     }
 
     #menu > li {
         padding-left: 1rem;
+        margin-bottom: 0;
     }
 
     .nav-toggle-label {
@@ -403,6 +462,32 @@ footer {
         /* Push main content down to accomodate larger header */
         margin-top: 80px;
     }
+
+    .text-image-row,
+    .image-text-row {
+        flex-direction: row;
+    }
+
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+    .hero-section h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    #signup {
+        width: 80%;
+        padding: 3rem;
+    }
+
+    .join-button {
+        width: auto;
+    } 
 }
 
 /* Larger devices (laptops and desktops, 992px and up) */
@@ -410,6 +495,22 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+    .hero-section h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero-section h3 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.75rem;
+    }
+
+    #signup {
+        width: 70%;
+    } 
 }
 
 /* Media query: small devices (mobile phones, up to 767px) */
@@ -444,6 +545,18 @@ footer {
 
     #hero {
         height: 400px;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section h3 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
     }
 
 
