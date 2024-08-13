@@ -157,7 +157,8 @@ main{
 
 /* Hero section with background image */
 .hero-section {
-    height: 600px;
+    position: relative;
+    height: 100vh;
     background: url('../images/photos/tree.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -165,7 +166,22 @@ main{
     justify-content: center;
     text-align: center;
     color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h2,
+.hero-section h3,
+.hero-section p {
+    /* Black background with 50% opacity */ 
+    background-color: rgba(0, 0, 0, 0.40); 
     padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 80%; 
+    text-align: center;
+    /* Additional opacity on text */
+    opacity: 0.9; 
 }
 
 .hero-section h2 {
