@@ -579,17 +579,32 @@ footer {
         height: 400px;
     }
 
+    .hero-section {
+        /* Reduce the height for smaller screens */
+        height: 60vh;
+        background-attachment: scroll;
+    }
+
     .hero-section h2 {
         font-size: 2rem;
     }
 
     .hero-section h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .hero-section p {
         font-size: 1rem;
     }
+
+    .hero-section h2,
+    .hero-section h3,
+    .hero-section p {
+        /* Increase the text width for smaller screens */
+        width: 90%; 
+        /* Adjust padding */
+        padding: 15px; 
+    } 
 
 
     /* Contact form */
