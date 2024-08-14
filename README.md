@@ -1,4 +1,4 @@
-<h1 align="center">TREE TOGETHER</h1>
+<h1 align="center">TREE TOGETHER Website</h1>
 
 Is a web platform designed to foster a global community dedicated to tree planting. By combining social interaction, gamification, and educational resources, we aim to inspire individuals to take action in combating climate change.
 
@@ -102,6 +102,19 @@ We welcome contributions to TREE TOGETHER! If you have ideas, suggestions, or im
 
 you can view a live demo of the project [here](https://moseslyatuu.github.io/tree-together)
 
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
 ## Testing
 
