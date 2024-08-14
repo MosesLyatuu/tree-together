@@ -572,6 +572,28 @@ footer {
         display: none;
     }
 
+    .about-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-content img {
+        max-width: 50%;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .gallery {
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        width: 30%;
+    }
+
     #logo {
         font-size: 280%;
         line-height: 75px;
@@ -628,6 +650,22 @@ footer {
     .hero-section p {
         font-size: 1.75rem;
     }
+
+    .hero-section-about {
+        height: 75vh;
+    }
+
+    .about-section {
+        padding: 6rem 2rem;
+    }
+
+    .full-width-section {
+        padding: 4rem 0;
+    }
+
+    .image-gallery {
+        padding: 6rem 2rem;
+    } 
 
     #signup {
         width: 70%;

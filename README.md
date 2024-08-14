@@ -1,7 +1,9 @@
-TREE TOGETHER.
+# TREE TOGETHER.
 Is a web platform designed to foster a global community dedicated to tree planting. By combining social interaction, gamification, and educational resources, we aim to inspire individuals to take action in combating climate change.
 
-Table of Contents
+[View Tree Together live project here][(https://moseslyatuu.github.io/tree-together/)]
+
+## Table of Contents
 Introduction
 Features
 Installation
@@ -50,3 +52,6 @@ Follow us on social media:
 Facebook
 Twitter
 Instagram
+
+
+[ https://moseslyatuu.github.io/tree-together/]: https://moseslyatuu.github.io/tree-together/
