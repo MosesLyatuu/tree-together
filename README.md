@@ -3,6 +3,10 @@ Is a web platform designed to foster a global community dedicated to tree planti
 
 [View Tree Together live project here](https://moseslyatuu.github.io/tree-together/)
 
+Tree Together website is designed to be responsive and accessible on a range of devices
+
+<h2 align="center"><img src="assets/images/photos/forReadme.gif"></h2>
+
 ## Table of Contents
 
 ## [Introduction](#introduction)
