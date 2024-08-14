@@ -5,47 +5,77 @@ Is a web platform designed to foster a global community dedicated to tree planti
 
 Tree Together website is designed to be responsive and accessible on a range of devices
 
-<h2 align="center"><img src="forReadme.gif"></h2>
+<h2 align="center"><img src="forReadme.gif" alt="Tree Together Platform"></h2>
 
 ## Table of Contents
 
 ## [Introduction](#introduction)
 ## [Features](#features)
+## [Technologies Used](#technologies-used)
 ## [Usage](#usage)
 ## [Contributing](#contributing)
-## [Contact](#contact)
 ## [Testing](#testing)
+## [Deployment](#deployment)
+## [Credits](#credits)
+## [Contact](#contact)
+
 
 ## Introduction
+
 TREE TOGETHER is an initiative to bring awareness and promote action towards tree planting. Our platform allows users to connect, participate in challenges, and learn about the importance of trees in combating climate change. By leveraging social interaction and gamification, we aim to make tree planting a fun and engaging activity for people of all ages.
 
-## Features
-## About Us: 
-Learn more about our organization, mission, and team.
-## Community Engagement: 
-Connect with like-minded individuals who are passionate about tree planting.
-## Gamification: 
-Participate in challenges and earn rewards for your contributions to the environment.
-## Educational Resources: 
-Access a wide range of information about trees, climate change, and sustainable practices.
-## Impact Tracking: 
-See the collective impact of tree-planting efforts globally.
-## User Profiles: 
-Create a profile to track your tree-planting activities and achievements.
-## Donation Support: 
-Options to donate and support tree-planting projects.
+## Key Sections
 
-Home: The main landing page.
-About Us: Learn more about our organization, mission, and team.
-Contact: Get in touch with us through the contact form.
-Contributing
+* ## About Us: 
+
+* Learn more about our organization, mission, and team.
+
+## Community Engagement: 
+
+* Connect with like-minded individuals who are passionate about tree planting.
+
+## Gamification: 
+
+* Participate in challenges and earn rewards for your contributions to the environment.
+
+## Educational Resources: 
+
+* Access a wide range of information about trees, climate change, and sustainable practices.
+
+## Impact Tracking: 
+
+* See the collective impact of tree-planting efforts globally.
+
+## User Profiles: 
+
+* Create a profile to track your tree-planting activities and achievements.
+
+## Donation Support: 
+
+* Options to donate and support tree-planting projects.
+
+### Home: 
+
+The main landing page.
+
+### About Us: 
+
+Learn more about our organization, mission, and team.
+
+### Contact: 
+
+Get in touch with us through the contact form.
+
+## Contributing
+
 We welcome contributions to TREE TOGETHER! If you have ideas, suggestions, or improvements, please feel free to submit a pull request. For major changes, please open an issue to discuss what you would like to change.
 
 ## Features
 
-*   Responsive on all device sizes
-
-*   Interactive elements
+* Responsive Design: Optimized for all device sizes.
+* Interactive Elements: Engaging and user-friendly interface.
+* Social Integration: Connect with friends and share your progress.
+* Impact Visualization: Track the global impact of tree planting efforts.
 
 ## Technologies Used
 
@@ -64,6 +94,13 @@ We welcome contributions to TREE TOGETHER! If you have ideas, suggestions, or im
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     * GitHub is used to store the projects code after being pushed from Git.
+
+## Usage
+
+### Live Demo
+
+you can view a live demo of the project [here](https://moseslyatuu.github.io/tree-together)
+
 
 ## Testing
 
@@ -107,10 +144,13 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+Navigate into the project directory:
+cd tree-together
 
 ## Credits
 
 ### Code
+
  * Understanding the concept of flexbox was learned through [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
  * Youtube concept of flexbox [Slaying The Dragon](https://www.youtube.com/watch?v=phWxA89Dy94&t=2s)
  * The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
@@ -130,9 +170,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ## Acknowledgements
 
  * My mentor David Bowers and Mitko Bachvarov provided helpful feedback and a link to the Flexbox guide.
- * Slack community for encouragement and information.
+ * Tutor support at Code Institute for their support. And slack community for encouragement and information.
 
 ## Contact
+
 For any questions or inquiries, please contact us at:
 
 Email: info@plantingtrees.org
