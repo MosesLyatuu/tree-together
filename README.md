@@ -5,7 +5,7 @@ Is a web platform designed to foster a global community dedicated to tree planti
 
 Tree Together website is designed to be responsive and accessible on a range of devices
 
-<h2 align="center"><img src="/workspace/tree-together/forReadme.gif"></h2>
+<h2 align="center"><img src="forReadme.gif"></h2>
 
 ## Table of Contents
 
