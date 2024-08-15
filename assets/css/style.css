@@ -20,6 +20,8 @@ body {
     background-color: rgb(141, 200, 220);
     margin: 0;
     padding-bottom: 80px;
+    font-size: 1rem;
+    line-height: 1.6rem;
 }
 
 h1 {
@@ -144,6 +146,8 @@ nav {
     font-size: 2rem;
     /* display: none; */
     cursor: pointer;
+    /* Hidden by default, shown only on mobile */
+    display: none;
 }
 
 /* Main content */
@@ -212,6 +216,7 @@ main{
 .content-section {
     padding: 2rem 1rem;
     max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     /* display: flex;
     flex-direction: column;
@@ -229,10 +234,12 @@ main{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+    flex-direction: column;
 }
 
   
-.text-image-row, .image-text-row {
+.text-image-row, 
+.image-text-row {
     display: flex;
     flex: 1; 
 }
@@ -265,11 +272,12 @@ img {
 }
 
 /* Join us section */
-.image-text-row .text h3 {
-    /* Centered title */
+/* .image-text-row .text h3 {
+    Centered title 
     text-align: center; 
-}
+} */
 
+.text-image-row .text ul,
 .image-text-row .text ul {
     padding-left: 0; /* Removed padding from list */
     list-style: none; /* Removed bullets */
@@ -317,6 +325,7 @@ img {
 .about-section h2 {
     font-size: 2.5rem;
     color: #004d40;
+    margin-bottom: 1rem;
 }
 
 .about-content {
@@ -324,6 +333,7 @@ img {
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
+    width: 90%;
 }
 
 .about-content img {
@@ -334,7 +344,7 @@ img {
 }
 
 .about-text {
-    text-align: center;
+    text-align: center; 
 }
 
 .about-text p {
@@ -352,7 +362,7 @@ img {
 }
 
 .full-width-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -376,8 +386,9 @@ img {
 }
 
 .gallery img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
     margin: 0.5rem;
     border-radius: 8px;
@@ -437,7 +448,7 @@ footer {
 }
 
 #social-networks a:hover{
-    color: rgb(195, 0, 255);
+    color: #004d40;
 }
 
 /* Contact Form Styles */
@@ -757,3 +768,161 @@ footer {
     }
 }
 
+/* Responsive Design Adjustments */
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h3 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+
+    .content-section {
+        padding: 2rem;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+    .content-section {
+        padding: 2.5rem;
+    }
+
+    .image-text-row,
+    .text-image-row {
+        flex-direction: row;
+    }
+
+    .hero-section-about {
+        height: 70vh;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 2rem;
+    }
+
+    .hero-section h2,
+    .hero-section h3,
+    .hero-section p {
+        width: 100%;
+    }
+
+    .content-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-toggle:checked ~ nav #menu {
+        display: flex;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .image-text-row,
+    .text-image-row {
+        flex-direction: column;
+    }
+
+    .hero-section-about {
+        height: 50vh;
+    }
+}
+
+/* More setup on Media Queries */
+@media (max-width: 1200px) {
+    .text-image-row, .image-text-row {
+        flex-direction: column;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-image-row .text, .image-text-row .text {
+        padding: 1rem;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+
+    .hero-section-about {
+        height: 40vh;
+    }
+
+    .full-width-section {
+        padding: 1rem 0;
+    }
+
+    #signup {
+        padding: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+}
